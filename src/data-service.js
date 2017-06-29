@@ -595,7 +595,7 @@ class ForceServiceCordova extends ForceService {
     }
 
     request(obj) {
-        if (networkPlugin) {
+    /*    if (false) {
             return new Promise((resolve, reject) => {
                 let obj2 = this.computeEndPointIfMissing(obj.endPoint, obj.path);
                 if (obj.params && obj.params.q && obj.params.q.replace) {
@@ -613,7 +613,7 @@ class ForceServiceCordova extends ForceService {
             });
         } else {
             return super.request(obj);
-        }
+        } */
+      return super.request(obj);
     }
-
 }
